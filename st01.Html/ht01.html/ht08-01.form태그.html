@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+
 <body>
 
     <!--form 태그-->
     <h2>네이버에서 "멕시코" get으로 검색 요청하기</h2>
     https://search.naver.com/search.naver?query=멕시코
+    <form action="https://search.naver.com/search.naver" method="get">
+        <input type="text" name="query" id="query">
+        <input type="submit" value="전송">
+    </form>
     <hr />
 
-    <h2>다음에서 "멕시코" get으로 검색 요청하기</h2>
-    https://search.daum.net/search?q=멕시코
-    <hr />
+
 
     <h2>구글에서 "멕시코"를 get으로 검색 요청하기</h2>
     https://www.google.com/search?q=멕시코
+    <form action="https://www.google.com/search?q=멕시코" method="GET">
+        <input type="text" name="q" id="q">
+        <input type="submit" value="전송">
+
+    </form>
+
+
+
     <hr />
 
     <h2>네이버에서 "멕시코"를 post로 검색 요청하기</h2>
+    https://search.naver.com/search.naver?query=서울
+<form action=" https://search.naver.com/search.naver?query=서울" method="post">
+<input>
 
+
+</form>
 </body>
+
 </html>

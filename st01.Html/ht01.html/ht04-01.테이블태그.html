@@ -15,7 +15,7 @@
         }
 
         td {
-            width: 100px;
+            width: 200px;
         }
     </style>
 </head>
@@ -84,28 +84,34 @@
 
     <h2>테이블 태그 실습</h2>
     <table>
-        <tr>
-            <td>
-                <h1>tbody 태그 내부</h1>
-            </td>
-            <td>
-                <h1>tbody 태그 내부</h1>
-            </td>
-        </tr>
-        <tr>
-            <td>tbody 태그 내부</td>
-            <td>tbody 태그 내부</td>
-        </tr>
-        <tr>
-            <td>tbody 태그 내부</td>
-            <td>tbody 태그 내부</td>
-        </tr>
-        <tr>
-
-            <td colspan="2">tfoot 태그 내부</td>
+        <thead>
             
-        </tr>
+            <tr>
+                <td>
+                    tbody 태그 내부
 
+                </td>
+                <td>
+                    tbody 태그 내부
+                </td>
+            </tr>
+        </thead>
+
+        <tr>
+            <th>tbody 태그 내부</th>
+            <th>tbody 태그 내부</th>
+        </tr>
+        <tr>
+            <td>tbody 태그 내부</td>
+            <td>tbody 태그 내부</td>
+        </tr>
+        <tr>
+
+            <tfoot>
+                <td colspan="2">tfoot 태그 내부</td>
+
+        </tr>
+        </tfoot>
 
     </table>
 

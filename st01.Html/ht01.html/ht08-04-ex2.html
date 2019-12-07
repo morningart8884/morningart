@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        label {width: 100px; display: inline-block; vertical-align:top; }
-        div {display:table; margin:auto; }
-        .orderinfo {  width: 250px; }
-        input[type='number'] { width:60px; }		
-		ul > li { list-style-type:none; }
+        label {
+            width: 100px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        div {
+            display: 
+            margin: auto;
+        }
+
+        .orderinfo {
+            width: 250px;
+        }
+
+        input[type='number'] {
+            width: 60px;
+        }
+
+        ul>li {
+            list-style-type: none;
+        }
     </style>
 </head>
+
 <body>
 
-	<pre>
+    <pre>
 		작업 순서
 		 개인 정보 
          배송지 정보
@@ -22,5 +41,27 @@
 		  다시작성 : form 입력 값 초기화
 	</pre>
     <h1>상품 주문서</h1>
+
+    <fieldset>
+        <legend>개인 정보</legend>
+
+        <label width 100px for="이름">이름</label> <input type="text" placeholder="이름을 입력하시오">
+        <br>
+        <label for="연락처">연락처</label> <input type="tel" placeholder="연락처를 입력하시오">
+    </fieldset>
+    <fieldset>
+        <legend>배송지 정보</legend>
+
+        <label for="주소">주소</label> <input type="text" name="" id="">
+        <br>
+        <label for="전화번호">전화번호</label> <input type="tel" name="" id="">
+<br>
+<label for="메모">메모</label> input <textarea name="" id="" cols="30" rows="10"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>주문 정보</legend>
+    </fieldset>
+
 </body>
+
 </html>
