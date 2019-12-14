@@ -1,64 +1,76 @@
 ﻿<!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>내가 처음 만드는 HTML 문서</title>
     <style>
         /* 태그 찾기 { 태그 설정 } */
-		/* 1 */
-        header { 
-            height: 70px; 
-            background-color: #F46075; 
+        /* 1 */
+        header {
+            height: 70px;
+            background-color: #F46075;
         }
-			
-		/* 2 */
+
+        /* 2 */
         footer {
             height: 50px;
             background-color: #333;
-            color:white;
+            color: white;
             text-align: center;
             line-height: 3;
         }
 
-		/* 3 */
-        section {	
-            border:1px solid gray;
+        /* 3 */
+        section {
+            border: 1px solid gray;
         }
-		
-        h1 { height: 70px;  background-color: #F46075; }
+
+        h1 {
+            height: 70px;
+            background-color: #F46075;
+        }
 
         /* id="menu" */
         #menu {
             list-style-type: none;
         }
+
         /*  class="item" */
         .item {
-            display: inline-block; 
+            display: inline-block;
             /* float:left; */
         }
+
         /* id="pet" */
         #pet {
             border: 1px solid gray;
         }
+
         /* <p> */
         p {
             line-height: 50px;
             text-align: center;
-            background-color: darkgray;
+            background-color: blue;
             height: 50px;
         }
     </style>
 </head>
+
 <body>
+    <header>
         <h1>입양하기</h1>
-
+    </header>
+    <nav>
         <ul>
-            <li><a href="#">애완견 종류</a></li>
-            <li><a href="#">입양하기</a></li>
-            <li><a href="#">건강돌보기</a></li>
-            <li><a href="#">더불어살기</a></li>
+            <li class="item"><a href="#">애완견 종류</a></li>
+            <li class="item"><a href="#">입양하기</a></li>
+            <li class="item"><a href="#">건강돌보기</a></li>
+            <li class="item"><a href="#">더불어살기</a></li>
         </ul>
-
+    </nav>
+    <section>
+        <div id="pet">
             <h2>강아지 용품 준비하기</h2>
             <ul>
                 <li>강아지 집 </li>
@@ -72,6 +84,11 @@
                 <li>샴푸, 린스, 애견용 타올 </li>
             </ul>
 
+        </div>
+    </section>
+    <footer>
         <p>Copyright 2012 funnycom</p>
+    </footer>
 </body>
+
 </html>

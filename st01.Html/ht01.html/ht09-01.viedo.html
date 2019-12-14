@@ -1,16 +1,24 @@
 ﻿<!DOCTYPE html>
 
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>비디오 재생하기</title>
     <style>
         body {
-            margin-top:20px;
-            margin-left:50px;
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+
+        <style>video #beach4 {
+            width: 400px;
+            height: 300px;
         }
     </style>
+    </style>
 </head>
+
 <body>
 
     <pre>
@@ -21,10 +29,19 @@
         2. inline 스타일 방식(style 속성 사용)
         3. 내부 스타일 방식( style 태그 사용)
     </pre>
-	
+
     <h2>페인팅 동영상. Painting.mp4</h2>
+    <video src="../media/Painting.mp4" controls></video>
     <hr>
-    
+
     <h2>해변 동영상. Beach.mp4. 너비는 200px, 높이는 150px</h2>
+    <video src="../media/Beach.mp4" controls width="200px" height="150px"></video>
+    <br>
+    <video src="../media/Beach.mp4" controls style="widows:250px; height:200px;"></video>
+    <br>
+
+
+    <video src="../media/Beach.mp4" controls id="beach4"></video>
 </body>
+
 </html>
