@@ -1,9 +1,61 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>텍스트 속성</title>
 </head>
+<style>
+    p.color_hexa {
+        color: #09fa04;
+    }
+
+    p.color_rgba {
+        color: rgba(233, 255, 12, 0.5);
+    }
+
+    p.color_name {
+        color: lightblue;
+    }
+
+    p.align_left {
+        text-align: left;
+    }
+
+    p.align_center {
+        text-align: center;
+    }
+
+    p.align_right {
+        text-align: right;
+    }
+
+    p.align_justify {
+        text-align: justify;
+    }
+
+    p.decoration1 {
+        text-decoration: none;
+    }
+
+    p.decoration2 {
+        text-decoration: underline;
+    }
+
+    p.decoration3 {
+        text-decoration: overline;
+    }
+
+    p.decoration4 {
+        text-decoration: line-through;
+    }
+
+    a {
+        text-decoration: none;
+    }
+</style>
+
+
 <body>
     <pre>
 텍스트 색상 지정 
@@ -12,15 +64,16 @@ text-decoration 속성
     </pre>
     <h2> 텍스트 색상 지정 </h2>
     <div>
-        <p class = "color_hexa"> #09fa04 </p>
-        <p class = "color_rgba"> rgba( 233, 255, 12, 0.5) </p>
-        <p class = "color_name"> lightblue </p>
+        <p class="color_hexa"> #09fa04 </p>
+        <p class="color_rgba"> rgba( 233, 255, 12, 0.5) </p>
+        <p class="color_name"> lightblue </p>
     </div>
 
     <hr>
 
     <h2> 텍스트 수평 정렬 지정 </h2>
     <div>
+
         <p class="align_left"> 텍스트 왼쪽 정렬!!! </p>
         <p class="align_center"> 텍스트 가운데 정렬!!! </p>
         <p class="align_right"> 텍스트 오른쪽 정렬!!! </p>
@@ -30,11 +83,13 @@ text-decoration 속성
     <hr>
 
     <h2> 텍스트 밑줄 설정. a 태그 설정시 많이 사용. </h2>
-    <p class = "decoration1"> 텍스트 밑줄 표시하지 않기!!! </p>
-    <p class = "decoration2"> 텍스트 밑줄 표시!!! </p>
-    <p class = "decoration3"> 텍스트 영역 위로 선 표시!!! </p>
-    <p class = "decoration4"> 텍스트 영역을 가로지르는 선 표시!!! </p>
+    <p class="decoration1"> 텍스트 밑줄 표시하지 않기!!! </p>
+    <p class="decoration2"> 텍스트 밑줄 표시!!! </p>
+    <p class="decoration3"> 텍스트 영역 위로 선 표시!!! </p>
+    <p class="decoration4"> 텍스트 영역을 가로지르는 선 표시!!! </p>
 
+    <h2>텍스트 밑줄 없애기</h2>
+    <a href="http://www.naver.com">밑줄을 없애시오</a>
 </body>
+
 </html>
-

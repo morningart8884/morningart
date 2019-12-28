@@ -1,25 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        #none {
+            list-style-type: none;
+        }
+
+        #disc {
+            list-style-type: disc;
+        }
+
+        #circle {
+            list-style-type: circle;
+        }
+
+        #square {
+            list-style-type: square;
+        }
+
+        #image {
+            list-style: url(../images/1.jpg);
+        }
+
+        #inside {
+            list-style: inside;
+        }
+
+        #outside {
+            list-style: outside;
+        }
+
+        li {
+            list-style: circle url(../images/dot.png)
+        }
+    </style>
 </head>
-<body>    
-    <ul>
-        <li>0</li>
 
-        <li id="none">1</li>
-        <li id="disc">2</li>
-        <li id="circle">3</li>
-        <li id="square">4</li>
+<hr>
+<ul>
+    <li>0</li>
 
-        <li id="image">5</li>
+    <li id="none">1</li>
+    <li id="disc">2</li>
+    <li id="circle">3</li>
+    <li id="square">4</li>
 
-        <li id="inside">6</li>
-        <li id="outside">7</li>
-        <li>8</li>
-    </ul>
+    <li id="image">5</li>
+
+    <li id="inside">6</li>
+    <li id="outside">7</li>
+    <li>8</li>
+</ul>
+
+<hr>
+<h2>list-style 속성</h2>
+<ul>
+    <li>list-style 속성 실습</li>
+</ul>
+
+</hr>
 </body>
+
 </html>

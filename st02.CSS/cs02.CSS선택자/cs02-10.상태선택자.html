@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>상태선택자</title>
@@ -25,13 +26,45 @@
             마지막 li 태그를 찾고 라운드 처리
 
         */
-        
+
         /* 브라우저 스타일 초기화 */
 
+        li {
+            float: left;
+            background-color: red;
+            list-style: none;
+            width: 80px;
+            height: 50px;
+        }
+
+        #first {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        #last {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .odd {
+            background-color: darkred;
+        }
+
+        .even {
+            background-color: red;
+        }
+
+        ul {
+            text-align-last: center;
+            line-height: 50px;
+
+        }
     </style>
 </head>
+
 <body>
-<pre>
+    <pre>
 태그에 class 속성과 id 속성만을 사용하여  그림처럼 style을 설정하시오.
     
 태그 설정
@@ -52,14 +85,14 @@ CSS 설정
 </pre>
 
     <ul>
-        <li>1번째</li>
-        <li>2번째</li>
-        <li>3번째</li>
-        <li>4번째</li>
-        <li>5번째</li>
-        <li>6번째</li>
-        <li>7번째</li>
-        <li>8번째</li>
+        <li id="first" class="odd">1번째</li>
+        <li class="even">2번째</li>
+        <li class="odd">3번째</li>
+        <li class="even">4번째</li>
+        <li class="odd">5번째</li>
+        <li class="even">6번째</li>
+        <li class="odd">7번째</li>
+        <li id="last" class="even">8번째</li>
     </ul>
 </body>
 

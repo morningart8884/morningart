@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>CSS3 반응 선택자</title>
@@ -25,9 +26,29 @@
         일반적으로는 border 사용 
         input 태그이면 outline 사용
         */
+        a:hover {
+            color: red;
+        }
 
+        a:visited {
+            color: pink;
+        }
+
+        a:link {
+            color: orange;
+        }
+        input:focus {
+            background-color: yellow;
+        }
+        input[disabled] {
+            background-color: gray;
+        }
+        input[checked] {
+            outline: 3px solid red;
+        }
     </style>
 </head>
+
 <body>
     <pre>
 h1에 마우스를 올렸을 때 텍스트 색깔을 red 로 바꾸시오.
@@ -44,8 +65,8 @@ visited : 폰트 색깔을 pink   로
 link    : 폰트 색깔을 orange 로 
     </pre>
     <a href="http://www.naver.com" target="_blank">naver</a>
-    <a href="http://daum.net"      target="_blank">daum</a>
-    <a href="http://google.com"    target="_blank">google</a>
+    <a href="http://daum.net" target="_blank">daum</a>
+    <a href="http://google.com" target="_blank">google</a>
     <hr>
 
     <pre>
@@ -66,4 +87,5 @@ input 태그에 checked가 설정되면 테두리를 만드시오
     </pre>
     <input type="checkbox" name="" checked />
 </body>
-</html>
+
+</html>
