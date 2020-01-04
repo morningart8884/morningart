@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        hr {
+            clear: both;
+        }
+        /*<ul class="parent">*/
+        ul.parent {
+float: left;
+
+        }
+        ul.child> li {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>기준 : float 적용하지 않는 경우</h2>
+    <ul>
+        <li> <a href="#">메뉴1-1</a></li>
+        <li> <a href="#">메뉴1-2</a></li>
+        <li> <a href="#">메뉴1-3</a></li>
+    </ul>
+
+    <ul>
+        <li> <a href="#">메뉴2-1</a></li>
+        <li> <a href="#">메뉴2-2</a></li>
+        <li> <a href="#">메뉴2-3</a></li>
+    </ul>
+
+    <hr>
+    <h2>부모에 float 적용</h2>
+    <ul class="parent">
+        <li> <a href="#">메뉴1-1</a></li>
+        <li> <a href="#">메뉴1-2</a></li>
+        <li> <a href="#">메뉴1-3</a></li>
+    </ul>
+    <ul class="parent">
+        <li> <a href="#">메뉴1-1</a></li>
+        <li> <a href="#">메뉴1-2</a></li>
+        <li> <a href="#">메뉴1-3</a></li>
+    </ul>
+    <hr>
+    <h2>자식에 float 적용</h2>
+    <ul class="child">
+        <li> <a href="#">메뉴1-1</a></li>
+        <li> <a href="#">메뉴1-2</a></li>
+        <li> <a href="#">메뉴1-3</a></li>
+    </ul>
+    <ul class="child">
+        <li> <a href="#">메뉴1-1</a></li>
+        <li> <a href="#">메뉴1-2</a></li>
+        <li> <a href="#">메뉴1-3</a></li>
+    </ul>
+</body>
+
+</html>
